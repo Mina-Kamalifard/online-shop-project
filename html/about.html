@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>"Online Shop About Page"</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/styleAbout.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ****************preloader starts*************** -->
+    <div class="loader">
+      <img src="../assets/imges/Circles-menu-3.gif" alt="Loading..." />
+    </div>
+    <!-- ****************preloader ends*************** -->
+
+    <!-- ***************header starts*************** -->
+    <header class="header-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <a href="../index.html" class="logo">
+                <img src="../assets/imges/logo.png" alt="Online Shop" />
+              </a>
+
+              <ul class="nav">
+                <li class="scroll-to-section">
+                  <a id="firstChild" href="../index.html">Home</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="../index.html#men">Men's</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="../index.html#women">Women's</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="../index.html#kids">Kid's</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="../index.html#accessories">Accessories</a>
+                </li>
+
+                <li class="submenu sub-1">
+                  <a href="">Pages</a>
+                  <ul class="pages-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="single-product.html">Single Product</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </li>
+                <li class="signup"><a class="signup-a" href="#">Sign up</a></li>
+              </ul>
+
+              <button class="hamburger">
+                <div class="bar"></div>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="mobile-nav">
+      <div class="nav-pos">
+        <ul>
+          <li><a id="firstChild" href="../index.html">Home</a></li>
+          <li><a href="../index.html#men">Men's</a></li>
+          <li><a href="../index.html#women">Women's</a></li>
+          <li><a href="../index.html#kids">Kid's</a></li>
+          <li><a href="../index.html#accessories">Accessories</a></li>
+          <li class="page-menu-hamburger">
+            <a href="#">Pages</a>
+            <ul class="page-menu-ul">
+              <li><a class="page-menu-item" href="about.html">About Us</a></li>
+              <li>
+                <a class="page-menu-item" href="products.html">Products</a>
+              </li>
+              <li>
+                <a class="page-menu-item" href="single-product.html"
+                  >Single Product</a
+                >
+              </li>
+              <li>
+                <a class="page-menu-item" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </li>
+
+          <li><a class="signup-a signup-a-mob" href="#">Sign up</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ****************header ends*************** -->
+
+    <!-- ****************************sign uo modal************************* -->
+
+    <div class="signup-modal">
+      <div class="signup-inner">
+        <div class="xmark">
+          <a href="#"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <h4>Log In</h4>
+        <div class="input-container">
+          <input
+            type="text"
+            placeholder="UserName"
+            class="username"
+            onkeyup="usernameValidation()"
+          />
+          <span class="username-validation">Must Contains 3 Character</span>
+          <input
+            type="email"
+            placeholder="Email"
+            class="email"
+            onkeyup="emailValidation()"
+          />
+          <span class="email-validation">Must be email or gmail</span>
+          <div id="pas-form">
+            <input
+              type="password"
+              placeholder="Password"
+              class="password"
+              onkeyup="passwordValidation()"
+            />
+            <i id="toggle-password" class="fa fa-eye"></i>
+          </div>
+          <span class="password-validation">Must Contains 10 Character</span
+          ><br />
+          <label for="remember">remember me?</label>
+          <input class="remember-input" type="checkbox" name="remember " />
+        </div>
+        <button class="login-btn" onclick="dataValidation()">Log In</button>
+        <span
+          ><a href="#">forgot password? </a>
+          <a href="#">| create an account</a>
+        </span>
+        <h5>or sign in with ...</h5>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-google"></i> GOOGLE</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-apple"></i> APPLE</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i> FACEBOOK</a>
+          </li>
+        </ul>
+        <span><a href="#">Privacy Policy | Terms and Conditions</a></span>
+      </div>
+    </div>
+    <div class="login-modal"><span>you loged in successfully </span></div>
+
+    <!-- *********************************************main starts********************************************* -->
+    <main>
+      <!-- **********************************about main banner*************************** -->
+
+      <div class="page-heading about-page-heading" id="top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="inner-content">
+                <h2>About Our Company</h2>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ************************************about us************************************** -->
+
+      <div class="about-us">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="left-image">
+                <img src="../assets/imges/about-left-image.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-content">
+                <h4>About Us &amp; Our Skills</h4>
+                <span
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod kon tempor incididunt ut labore.</span
+                >
+                <div class="quote">
+                  <i class="fa fa-quote-left"></i>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiuski smod kon tempor incididunt ut labore.
+                  </p>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod kon tempor incididunt ut labore et dolore magna
+                  aliqua ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip.
+                </p>
+                <ul>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- *****************************************our team*************************************** -->
+
+      <section class="our-team">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-heading">
+                <h2>Our Amazing Team</h2>
+                <span
+                  >Details to details is what makes Hexashop different from the
+                  other themes.</span
+                >
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="team-item">
+                <div class="thumb">
+                  <div class="hover-effect">
+                    <div class="inner-content">
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><i class="fa-brands fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <img src="../assets/imges/team-member-01.jpg" />
+                </div>
+                <div class="down-content">
+                  <h4>Ragnar Lodbrok</h4>
+                  <span>Product Caretaker</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="team-item">
+                <div class="thumb">
+                  <div class="hover-effect">
+                    <div class="inner-content">
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><i class="fa-brands fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <img src="../assets/imges/team-member-02.jpg" />
+                </div>
+                <div class="down-content">
+                  <h4>Ragnar Lodbrok</h4>
+                  <span>Product Caretaker</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="team-item">
+                <div class="thumb">
+                  <div class="hover-effect">
+                    <div class="inner-content">
+                      <ul>
+                        <li>
+                          <a href="#"
+                            ><i class="fa-brands fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <img src="../assets/imges/team-member-03.jpg" />
+                </div>
+                <div class="down-content">
+                  <h4>Ragnar Lodbrok</h4>
+                  <span>Product Caretaker</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- *******************************************our services************************************** -->
+      <section class="our-services">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-heading">
+                <h2>Our Services</h2>
+                <span
+                  >Details to details is what makes Hexashop different from the
+                  other themes.</span
+                >
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="service-item">
+                <h4>Synther Vaporware</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed
+                  do eiusmod temp incididunt ut labore, et dolore quis ipsum
+                  suspend.
+                </p>
+                <img src="../assets/imges/service-01.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="service-item">
+                <h4>Locavore Squidward</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed
+                  do eiusmod temp incididunt ut labore, et dolore quis ipsum
+                  suspend.
+                </p>
+                <img src="../assets/imges/service-02.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="service-item">
+                <h4>Health Gothfam</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed
+                  do eiusmod temp incididunt ut labore, et dolore quis ipsum
+                  suspend.
+                </p>
+                <img src="../assets/imges/service-03.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- **********************************************main ends****************************************************** -->
+    <!-- *********************************************subscribe*************************************** -->
+    <div class="subscribe">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="section-heading">
+              <h2>By Subscribing To Our Newsletter You Can Get 30% Off</h2>
+              <span
+                >Details to details is what makes Hexashop different from the
+                other themes.</span
+              >
+            </div>
+            <form id="subscribe" action="" method="get">
+              <div class="row">
+                <div class="col-lg-5">
+                  <fieldset>
+                    <input
+                      name="name"
+                      type="text"
+                      id="name"
+                      placeholder="Your Name"
+                      required=""
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-lg-5">
+                  <fieldset>
+                    <input
+                      name="email"
+                      type="text"
+                      id="email"
+                      pattern="[^ @]*@[^ @]*"
+                      placeholder="Your Email Address"
+                      required=""
+                    />
+                  </fieldset>
+                </div>
+                <div class="col-lg-2">
+                  <fieldset>
+                    <button
+                      type="submit"
+                      id="form-submit"
+                      class="main-dark-button"
+                    >
+                      <i class="fa fa-paper-plane"></i>
+                    </button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-4">
+            <div class="row">
+              <div class="col-6">
+                <ul>
+                  <li>
+                    Store Location:<br /><span
+                      >Sunny Isles Beach, FL 33160, United States</span
+                    >
+                  </li>
+                  <li>Phone:<br /><span>010-020-0340</span></li>
+                  <li>Office Location:<br /><span>North Miami Beach</span></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li>
+                    Work Hours:<br /><span>07:30 AM - 9:30 PM Daily</span>
+                  </li>
+                  <li>Email:<br /><span>info@company.com</span></li>
+                  <li>
+                    Social Media:<br /><span
+                      ><a href="#">Facebook</a>, <a href="#">Instagram</a>,
+                      <a href="#">Behance</a>, <a href="#">Linkedin</a></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- *****************************************footr starts************************************************* -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="first-item">
+              <div class="logo">
+                <img
+                  src="../assets/imges/white-logo.png"
+                  alt="hexashop ecommerce templatemo"
+                />
+              </div>
+              <ul>
+                <li>
+                  <a href="#"
+                    >16501 Collins Ave, Sunny Isles Beach, FL 33160, United
+                    States</a
+                  >
+                </li>
+                <li><a href="#">hexashop@company.com</a></li>
+                <li><a href="#">010-020-0340</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <h4>Shopping &amp; Categories</h4>
+            <ul>
+              <li><a href="../index.html#men">Men’s Shopping</a></li>
+              <li><a href="../index.html#women">Women’s Shopping</a></li>
+              <li><a href="../index.html#kids">Kid's Shopping</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="../index.html">Homepage</a></li>
+              <li><a href="#top">About Us</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h4>Help &amp; Information</h4>
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">FAQ's</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Tracking ID</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-12">
+            <div class="under-footer">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus,
+                nobis. <br />Lorem ipsum dolor sit amet.
+              </p>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- *****************************************footr ends************************************************* -->
+
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>"Online Shop"</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+        <link href="assets/css/style.css" rel="stylesheet">
+
+    </head>
+    <body>
+<!-- ****************************preloader starts******************************* -->
+<div class="loader"> 
+    <img src="assets/imges/Circles-menu-3.gif" alt="Loading..." />
+ </div>
+<!-- *****************************preloader ends***************************** -->
+
+<!-- *********************************header starts********************************* -->
+<header class="header-area ">
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">
+                  <img  src="assets/imges/logo.png" alt="Online Shop">
+                </a>
+                <ul class="nav">
+                    <li class="scroll-to-section"><a id="firstChild"  href="#top">Home</a></li>
+                    <li class="scroll-to-section"><a href="#men">Men's</a></li>
+                    <li class="scroll-to-section"><a href="#women">Women's</a></li>
+                    <li class="scroll-to-section"><a href="#kids">Kid's</a></li>
+                    <li class="scroll-to-section"><a href="#accessories">Accessories</a></li>
+                    <li class="submenu sub-1" ><a href="">Pages</a>
+                        <ul class="pages-menu">
+                            <li><a href="./html/about.html">About Us</a></li>
+                            <li><a href="./html/products.html">Products</a></li>
+                            <li><a href="./html/single-product.html">Single Product</a></li>
+                            <li><a href="./html/contact.html">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="signup" ><a class="signup-a" href="#">Sign up</a></li>
+                </ul>
+
+                <button class="hamburger ">
+                    <div class="bar"></div>
+                </button>
+            </nav>
+        </div>
+    </div>
+</div>
+</header>
+<!-- ***********************************mobile nav********************************* -->
+<nav class="mobile-nav">
+    <div class="nav-pos">
+     <ul>  
+         <li><a id="firstChild"  href="index.html">Home</a></li>
+         <li><a class="forclick" href="index.html#men">Men's</a></li>
+         <li><a class="forclick" href="index.html#women">Women's</a></li> 
+         <li><a class="forclick" href="index.html#kids">Kid's</a></li> 
+         <li><a class="forclick" href="index.html#accessories">Accessories</a></li> 
+         <li class="page-menu-hamburger"><a href="#">Pages</a>
+            <ul class="page-menu-ul"> 
+                <li> <a class="page-menu-item" href="./html/about.html">About Us</a></li>
+                <li><a class="page-menu-item" href="./html/products.html">Products</a></li>
+                <li><a class="page-menu-item" href="./html/single-product.html">Single Product</a></li>
+                <li><a class="page-menu-item" href="./html/contact.html">Contact Us</a></li>
+             </ul>
+        </li> 
+        <li> <a class="signup-hamburger signup-a-mob forclick" href="#">Sign up</a></li>
+    </ul>
+</div>
+</nav>
+
+<!-- ********************************header ends***************************** -->
+
+<!-- ****************************sign up modal starts************************* -->
+
+<div class="signup-modal">
+    <div class="signup-inner">
+        <div class="xmark"><a href="#"><i class="fa-solid fa-xmark"></i></a></div>
+      <h4>Log In</h4>
+       <div class="input-container">
+           <input type="text" placeholder="UserName" class="username" onkeyup="usernameValidation()">
+           <span class="username-validation">Must Contains 3 Character</span>
+           <input type="email" placeholder="Email" class="email" onkeyup="emailValidation()">
+           <span class="email-validation">Must be email or gmail</span>
+           <div id="pas-form">
+            <input type="password" placeholder="Password" class="password" onkeyup="passwordValidation()">
+                      <i id="toggle-password" class="fa fa-eye"></i>
+                    </div>
+           <span class="password-validation">Must Contains 10 Character</span><br>
+           <label for="remember">remember me?</label>
+           <input class="remember-input" type="checkbox" name="remember ">
+        </div>
+      <button class="login-btn" onclick="dataValidation()">Log In</button>
+      <span><a href="#">forgot password?     </a>
+        <a href="#">|     create an account</a>
+    </span>
+      <h5>or sign in with ...</h5>
+      <ul>
+        <li><a href="#"><i class="fa-brands fa-google"></i> GOOGLE</a></li>
+        <li><a href="#"><i class="fa-brands fa-apple"></i> APPLE</a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook"></i> FACEBOOK</a></li>
+      </ul>
+     <span><a href="#">Privacy Policy | Terms and Conditions</a></span>
+    </div>
+</div>
+<div class="login-modal"> <span>you loged in successfully </span></div>
+
+<!-- ****************************sign up modal ends************************* -->
+
+<!-- ******************************************main starts******************************************** -->
+<main>
+<!-- ******************************main banner starts****************************** -->
+<div class="main-banner" id="top">
+ <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 pad1">
+            <div class="left-content">
+              <div class="thumb">
+                <div class="inner-content">
+                    <h4>We Are Online Shop</h4>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+                    <div class="main-border-button">
+                        <a href="#">Purchase Now!</a>
+                    </div>
+                </div>
+                <img src="assets/imges/left-banner-image.jpg" alt="BUY NOW">
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="right-content">
+                <div class="row right-all-content">
+                    <!-- *****here is insertAdjacentHTML***** -->
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+</div>
+<!-- ******************************main banner ends****************************** -->
+
+<!-- *******************************************men area starts*************************************** -->
+<section class="section" id="men">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-heading">
+                    <h2>Men's Latest</h2>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, corrupti.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *****************************OWL Carousel************************** -->
+    <div class="container">
+      <div class="owl-carousel owl-theme lastest men-lastest">
+      </div>
+    </div>
+</section>
+
+<!-- *******************************************men area ends*************************************** -->
+
+<!-- *******************************************women area starts*************************************** -->
+<section class="section" id="women">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-heading">
+                    <h2>Women's Latest</h2>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, corrupti.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *****************************OWL Carousel************************** -->
+    <div class="container">
+      <div class="owl-carousel owl-theme lastest women-lastest">
+      </div>
+    </div>
+</section>
+<!-- *******************************************women area ends*************************************** -->
+
+<!-- *******************************************kids area starts*************************************** -->
+<section class="section" id="kids">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-heading">
+                    <h2>Kids Latest</h2>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, corrupti.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *****************************OWL Carousel************************** -->
+    <div class="container">
+      <div class="owl-carousel owl-theme lastest kids-lastest">
+      </div>
+    </div>
+</section>
+
+<!-- *******************************************kids area ends*************************************** -->
+<!-- *******************************************accessories area starts*************************************** -->
+
+<section class="accessory" id="accessories">
+    <div class="container">
+       <div class="row">
+           <div class="col-lg-6">
+                 <div class="thumb">
+                    <div class="left-content">
+                        <h2>Trend Accessories</h2>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, molestiae vitae accusantium ullam ex facilis maxime adipisci quod dignissimos temporibus ea consequatur?</span>
+                        <div class="quote">
+                            <i class="fa fa-quote-left"></i><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, quidem. amet consectetur adipisicing .</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate cupiditate tempora corporis! Quidem est quam magnam rem, quisvtatio molestiae maiores nesciunt ut error unde.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, amet consectetur labore. <a rel="nofollow" href="products.html" target="_blank">support us</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, obcaecati.</p>
+                        <div class="main-border-button">
+                            <a href="./html/products.html">Discover More</a>
+                        </div>
+                    </div>
+                 </div>
+           </div>
+           <div class="col-lg-6">
+               <div class="right-content">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="acc-image">
+                            <img src="assets/imges/explore-image-01.jpg" alt="watch">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="acc-image">
+                            <img src="assets/imges/blog-01.jpg.webp" alt="bag">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="acc-image">
+                            <img src="assets/imges/explore-image-02.jpg" alt="hat">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="acc-image">
+                            <img src="assets/imges/banner-04.jpg.webp" alt="bag">
+                        </div>
+                    </div>
+                </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+   </section>
+
+<!-- *******************************************accessories area ends*************************************** -->
+
+<!-- **********************************social media starts************************************** -->
+
+<section class="section" id="social-media">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-heading">
+                    <h2>Social Media</h2>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, corrupti.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row images">
+            <div class="col-2">
+                <div class="thumb">
+                    <div class="icon">
+                        <a href="http://instagram.com">
+                            <h6>Fashion</h6>
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img src="assets/imges/instagram-01.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="thumb">
+                    <div class="icon">
+                        <a href="http://instagram.com">
+                            <h6>New</h6>
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img src="assets/imges/instagram-02.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="thumb">
+                    <div class="icon">
+                        <a href="http://instagram.com">
+                            <h6>Brand</h6>
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img src="assets/imges/instagram-03.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="thumb">
+                    <div class="icon">
+                        <a href="http://instagram.com">
+                            <h6>Makeup</h6>
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img src="assets/imges/instagram-04.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="thumb">
+                    <div class="icon">
+                        <a href="http://instagram.com">
+                            <h6>Leather</h6>
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img src="assets/imges/instagram-05.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="thumb">
+                    <div class="icon">
+                        <a href="http://instagram.com">
+                            <h6>Bag</h6>
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img src="assets/imges/instagram-06.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--**********************************social media ends************************************** -->
+</main>
+<!-- **********************************************main ends*********************************************** -->
+
+<!-- *********************************************subscribe*************************************** -->
+<div class="subscribe">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="section-heading">
+                    <h2>By Subscribing To Our Newsletter You Can Get 30% Off</h2>
+                    <span>Details to details is what makes Hexashop different from the other themes.</span>
+                </div>
+                <form id="subscribe" action="" method="get">
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <fieldset>
+                          <input name="name" type="text" id="name" placeholder="Your Name" required="">
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-5">
+                        <fieldset>
+                          <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email Address" required="">
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-2">
+                        <fieldset>
+                          <button type="submit" id="form-submit" class="main-dark-button"><i class="fa fa-paper-plane"></i></button>
+                        </fieldset>
+                      </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-6">
+                        <ul>
+                            <li>Store Location:<br><span>Sunny Isles Beach, FL 33160, United States</span></li>
+                            <li>Phone:<br><span>010-020-0340</span></li>
+                            <li>Office Location:<br><span>North Miami Beach</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul>
+                            <li>Work Hours:<br><span>07:30 AM - 9:30 PM Daily</span></li>
+                            <li>Email:<br><span>info@company.com</span></li>
+                            <li>Social Media:<br><span><a href="#">Facebook</a>, <a href="#">Instagram</a>, <a href="#">Behance</a>, <a href="#">Linkedin</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- *****************************************footr starts************************************************* -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 ">
+                <div class="first-item">
+                    <div class="logo">
+                        <img src="assets/imges/white-logo.png" alt="hexashop ecommerce templatemo">
+                    </div>
+                    <ul>
+                        <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></li>
+                        <li><a href="#">hexashop@company.com</a></li>
+                        <li><a href="#">010-020-0340</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <h4>Shopping &amp; Categories</h4>
+                <ul>
+                    <li><a href="#men">Men’s Shopping</a></li>
+                    <li><a href="#women">Women’s Shopping</a></li>
+                    <li><a href="#kids">Kid's Shopping</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#top">Homepage</a></li>
+                    <li><a href="./html/about.html">About Us</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="./html/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h4>Help &amp; Information</h4>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">FAQ's</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Tracking ID</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-12">
+                <div class="under-footer">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, nobis. 
+                    <br>Lorem ipsum dolor sit amet.
+                </p>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- *****************************************footr ends************************************************* -->
+
+<script src="assets/js/jquery-3.7.0.min.js"></script>
+<script src="assets/owlcarousel/owl.carousel.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/script-carousel.js"></script>
+
+    </body>
+</html>
